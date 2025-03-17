@@ -24,7 +24,6 @@
             pkgs.lldb_19
             pkgs.bacon
             pkgs.clippy
-            pkgs.rustc
             pkgs.xdotool
             pkgs.libxkbcommon
             pkgs.rust-bin.beta.latest.default
@@ -36,9 +35,6 @@
             pkgs.pkg-config
           ];
 
-          shellHook = ''
-            exec zsh
-          '';
         };      
       }
     );

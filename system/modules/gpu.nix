@@ -23,7 +23,14 @@
           open = false;
           nvidiaSettings = true;
           package = config.boot.kernelPackages.nvidiaPackages.stable;
-          # add prime for laptop
+          prime = {
+            offload = {
+              enable = true;
+              enableOffloadCmd = true;
+            };
+            intelBusId = "PCI:0:2:0";
+            nvidiaBusId = "PCI:0:1:0";
+          };
         };
       })
 
