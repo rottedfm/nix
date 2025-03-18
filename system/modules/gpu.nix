@@ -4,8 +4,8 @@
   options.gpuSettings = {
     enable = lib.mkEnableOption "Enable GPU configuration.";
     driver = lib.mkOption {
-      type = lib.types.enum [ "nvidia" "amd" ];
-      default = "amd";
+      type = lib.types.enum [ "NVIDIA" "AMD" ];
+      default = "AMD";
       description = "Choose which GPU driver to enable: 'nvidia' or 'amd'.";
     };
   };
