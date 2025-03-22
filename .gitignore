@@ -1,6 +1,6 @@
-system/settings.nix
-user/settings.nix
-system/hardware-configuration.nix
-shell/flake.lock
+/system/settings.nix
+/user/settings.nix
+/system/hardware-configuration.nix
+/shell/flake.lock
 flake.lock
 
