@@ -14,6 +14,9 @@
         pkgs = import nixpkgs {
           inherit system overlays;
         };
+        rust = pkgs.rust-bin.stable.latest.default.override {
+          targets = [ "x86_64-unknown-linux-musl" ];
+        };
       in
       {
         devShells.default = pkgs.mkShell {
@@ -26,15 +29,14 @@
             pkgs.clippy
             pkgs.xdotool
             pkgs.libxkbcommon
-            pkgs.rust-bin.beta.latest.default
             pkgs.xorg.libxcb
             pkgs.dbus
+            rust
           ];
           nativeBuildInputs = [
             pkgs.autoreconfHook
             pkgs.pkg-config
           ];
-
         };      
       }
     );
