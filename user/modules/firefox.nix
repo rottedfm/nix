@@ -6,9 +6,9 @@
   };
 
   config = lib.mkIf config.firefoxSettings.enable {
-    programs.firefox = {
+    programs.librewolf = {
       enable = true;
-      package = pkgs.unstable.firefox;
+      package = pkgs.unstable.librewolf;
     };
   };
 }
