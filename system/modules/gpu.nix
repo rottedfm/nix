@@ -4,15 +4,15 @@
   options.gpuSettings = {
     enable = lib.mkEnableOption "Enable GPU configuration.";
     driver = lib.mkOption {
-      type = lib.types.enum [ "NVIDIA" "AMD" ];
-      default = "AMD";
-      description = "Choose which GPU driver to enable: 'nvidia' or 'amd'.";
+      type = lib.types.enum [ "NVIDIA" "AMD" "NONE" ];
+      default = "NONE";
+      description = "Choose GPU driver: 'NVIDIA', 'AMD', or 'NONE' for no explicit GPU config.";
     };
   };
 
   config = lib.mkIf config.gpuSettings.enable (
     lib.mkMerge [
-      (lib.mkIf (config.gpuSettings.driver == "nvidia") {
+      (lib.mkIf (config.gpuSettings.driver == "NVIDIA") {
         services.xserver.videoDrivers = [ "nvidia" ];
 
         hardware.graphics.enable = true;
@@ -34,9 +34,13 @@
         };
       })
 
-      (lib.mkIf (config.gpuSettings.driver == "amd") {
+      (lib.mkIf (config.gpuSettings.driver == "AMD") {
         boot.initrd.kernelModules = [ "amdgpu" ];
         services.xserver.videoDrivers = [ "amdgpu" ];
+      })
+
+      (lib.mkIf (config.gpuSettings.driver == "NONE") {
+        # No GPU-specific settings applied
       })
     ]
   );
