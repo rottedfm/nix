@@ -29,7 +29,6 @@
       })
 
       (lib.mkIf (config.ollamaSettings.acceleration == "NONE") {
-        # Ollama is not configured for acceleration (could still enable CPU mode later)
         services.ollama.enable = true;
       })
     ]
