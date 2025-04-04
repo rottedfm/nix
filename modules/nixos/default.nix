@@ -8,6 +8,7 @@
     ./xserver.nix
     ./mullvad.nix
     ./stylix.nix
+    ./gpg.nix
     ./ollama.nix
   ];
   services.openssh.enable = true;

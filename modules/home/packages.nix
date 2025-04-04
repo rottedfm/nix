@@ -10,6 +10,7 @@
     sd
     tree
     gnumake
+    pass
 
     # Nix dev
     cachix
@@ -23,8 +24,11 @@
     less
 
     # gba emulator
-    mgba
+    vbam
 
+    # minecraft
+    portablemc
+    
     # qbittorrent
     qbittorrent
 
