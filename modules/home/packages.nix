@@ -11,12 +11,19 @@
     tree
     gnumake
     pass
+    eza
+    fzf
+    glow
 
     # Nix dev
     cachix
     nil # Nix language server
     nix-info
     nixpkgs-fmt
+
+    # monero 
+    monero-cli
+    xmrig
 
 
     # On ubuntu, we need this less for `man home-configuration.nix`'s pager to

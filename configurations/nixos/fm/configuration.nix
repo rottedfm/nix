@@ -45,7 +45,6 @@
     isNormalUser = true;
     description = "rotted";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [];
   };
 
   # Allow unfree packages
