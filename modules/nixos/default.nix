@@ -7,7 +7,6 @@
     ./amd.nix
     ./xserver.nix
     ./mullvad.nix
-    ./stylix.nix
     ./gpg.nix
     ./ollama.nix
     ./zsh.nix
