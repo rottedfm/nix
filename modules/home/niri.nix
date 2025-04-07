@@ -20,13 +20,13 @@ layout {
   border = {
     width 4
     active-gradient {
-      from "${base16.base08}"
-      to "${base16.base0D}"
+      from "${base16.caroline.base08}"
+      to "${base16.caroline.base0D}"
       angle 45
     }
     inactive-gradient {
-      from "${base16.base08}"
-      to "${base16.base0D}"
+      from "${base16.caroline.base08}"
+      to "${base16.caroline.base0D}"
       angle 45
     }
   }
@@ -34,13 +34,13 @@ layout {
   focus-ring {
     width 4
     active-gradient {
-      from "${base16.base08}"
-      to "${base16.base0D}"
+      from "${base16.caroline.base08}"
+      to "${base16.caroline.base0D}"
       angle 45
     }
     inactive-gradient {
-      from "${base16.base08}"
-      to "${base16.base0D}"
+      from "${base16.caroline.base08}"
+      to "${base16.caroline.base0D}"
       angle 45
     }
   }
