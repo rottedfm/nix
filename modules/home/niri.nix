@@ -1,25 +1,13 @@
-{ flake, config, ... }:
+{ flake, ... }:
 
-let
-  colors = config.stylix.colors;
-in {
+{
   imports = [
     flake.inputs.niri-flake.homeModules.niri
-    flake.inputs.stylix.nixosModules.stylix
   ];
 
   programs.niri = {
     enable = true;
     config = ''
-colors {
-  background = "${colors.base00}";
-  foreground = "${colors.base05}";
-  border-focused = "${colors.base0D}";
-  border-unfocused = "${colors.base01}";
-  border-urgent = "${colors.base08}";
-  active-border = "${colors.base0B}";
-  inactive-border = "${colors.base03}";
-}
 
 binds {
   Mod+Q { spawn "kitty"; }
