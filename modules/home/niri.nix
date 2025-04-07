@@ -1,12 +1,5 @@
-{ flake, pkgs, ... }:
+{ flake, ... }:
 
-let
-  base16 = builtins.fromJSON (builtins.readFile (pkgs.runCommand "base16-caroline" {
-    buildInputs = [ pkgs.yj ];
-  } ''
-    yj -yj < ${pkgs.base16-schemes}/share/themes/caroline.yaml > $out
-  ''));
-in
 {
   imports = [
     flake.inputs.niri-flake.homeModules.niri
@@ -18,29 +11,19 @@ in
 
 layout {
   border = {
-    width 4
-    active-gradient {
-      from "${base16.caroline.base08}"
-      to "${base16.caroline.base0D}"
-      angle 45
-    }
-    inactive-gradient {
-      from "${base16.caroline.base08}"
-      to "${base16.caroline.base0D}"
-      angle 45
-    }
+    off
   }
 
   focus-ring {
     width 4
     active-gradient {
-      from "${base16.caroline.base08}"
-      to "${base16.caroline.base0D}"
+      from "#ffb86c"
+      to "#b294bb"
       angle 45
     }
     inactive-gradient {
-      from "${base16.caroline.base08}"
-      to "${base16.caroline.base0D}"
+      from "#31182d"
+      to "#201010"
       angle 45
     }
   }
