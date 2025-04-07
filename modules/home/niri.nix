@@ -5,6 +5,7 @@ let
 in {
   imports = [
     flake.inputs.niri-flake.homeModules.niri
+    flake.inputs.stylix.homeManagerModules.stylix
   ];
 
   programs.niri = {
