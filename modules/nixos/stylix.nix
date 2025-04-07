@@ -33,5 +33,7 @@
     };
   }; 
 
+  stylix.targets.niri.enable = true;
+
 }
 
