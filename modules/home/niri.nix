@@ -10,7 +10,7 @@
     config = ''
 
 layout {
-  border = {
+  border {
     off
   }
 
