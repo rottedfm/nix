@@ -1,5 +1,8 @@
-{ flake, ... }:
+{ flake, pkgs, lib, ... }:
 
+let
+  base16 = lib.importYAML "${pkgs.base16-schemes}/share/themes/caroline.yaml";
+in
 {
   imports = [
     flake.inputs.niri-flake.homeModules.niri
@@ -8,6 +11,38 @@
   programs.niri = {
     enable = true;
     config = ''
+
+layout {
+  border = {
+    width 4
+    active-gradient {
+      from "${base16.base08}"
+      to "${base16.base0D}"
+      angle 45
+    }
+    inactive-gradient {
+      from "${base16.base08}"
+      to "${base16.base0D}"
+      angle 45
+    }
+  }
+
+  focus-ring {
+    width 4
+    active-gradient {
+      from "${base16.base08}"
+      to "${base16.base0D}"
+      angle 45
+    }
+    inactive-gradient {
+      from "${base16.base08}"
+      to "${base16.base0D}"
+      angle 45
+    }
+  }
+
+  
+}
 
 binds {
   Mod+Q { spawn "kitty"; }
