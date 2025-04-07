@@ -1,7 +1,11 @@
-{ flake, pkgs, lib, ... }:
+{ flake, pkgs, ... }:
 
 let
-  base16 = lib.importYAML "${pkgs.base16-schemes}/share/themes/caroline.yaml";
+  base16 = builtins.fromJSON (builtins.readFile (pkgs.runCommand "base16-caroline" {
+    buildInputs = [ pkgs.yj ];
+  } ''
+    yj -tj < ${pkgs.base16-schemes}/share/themes/caroline.yaml > $out
+  ''));
 in
 {
   imports = [
