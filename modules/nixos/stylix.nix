@@ -32,8 +32,5 @@
       name = "Noto Color Emoji";
     };
   }; 
-
-  stylix.targets.niri.enable = true;
-
 }
 
