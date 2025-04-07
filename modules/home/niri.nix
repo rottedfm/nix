@@ -1,7 +1,7 @@
 { flake, pkgs, lib, ... }:
 
 let
-  base16 = lib.importYAML "${pkgs.base16-schemes}/share/themes/caroline.yaml";
+  base16 = lib.importTOML "${pkgs.base16-schemes}/share/themes/caroline.toml";
 in
 {
   imports = [
