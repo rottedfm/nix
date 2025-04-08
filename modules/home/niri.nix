@@ -33,8 +33,13 @@ environment {
 layout {
 
   focus-ring {
+    off
     width 6
     active-color "#ff79c6" 
+  }
+
+  border {
+    off
   }
 
 
@@ -42,12 +47,7 @@ layout {
     off
   }
 
-  structs {
-    left 64
-    right 64
-    top 64
-    bottom 64
-  }
+
 }
 
 
