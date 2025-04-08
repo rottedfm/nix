@@ -14,7 +14,7 @@
 
 spawn-at-startup "swww"
   
-screenshot-path = "~/Media/Pictures/Schreenshots/%Y-%m-%d %H-%M-%S.png"
+screenshot-path "~/Media/Pictures/Schreenshots/%Y-%m-%d %H-%M-%S.png"
 
 hotkey-overlay {
   skip-at-startup
