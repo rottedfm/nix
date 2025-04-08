@@ -23,7 +23,7 @@ layout {
     xcursor-size 24
 
     hide-when-typing
-    hid-after-inactive ms 1000
+    hide-after-inactive-ms 1000
   }
 
   tab-indicator {
