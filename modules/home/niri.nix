@@ -1,3 +1,4 @@
+
 { flake, ... }:
 
 {
@@ -12,7 +13,7 @@
 layout {
   border {
     width 6
-    active-gradient from="#ffcfff" to="#50fa7b" angle=45 relative-to="workspace-view"
+    active-gradient from="#ff79c6" to="#50fa7b" angle=45 relative-to="workspace-view"
     inactive-gradient from="#31182d" to="#201010" angle=45 relative-to="workspace-view" in="srgb-linear"
   }
 
