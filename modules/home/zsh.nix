@@ -4,8 +4,14 @@
   programs.zsh = {
     enable = true;
     initExtra = ''
-bindkey "$terminfo[kcuu1]" history-substring-search-up
-bindkey "$terminfo[kcud1]" history-substring-search-down      
+function swww() {
+  if ! pgrep -x "swww-daemon" > /dev/null; then
+    swww init
+    sleep 1
+  fi
+
+  swww img "~/.nix/wallpapers/pink-dream.jpg"
+}
 
 function nixpush() {
   local repo="$HOME/.nix"

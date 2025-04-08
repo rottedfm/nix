@@ -1,14 +1,28 @@
 
-{ flake, ... }:
+{ flake, pkgs, ... }:
 
 {
   imports = [
     flake.inputs.niri-flake.homeModules.niri
   ];
 
+  home.packages = [ pkgs.swww ];
+
   programs.niri = {
     enable = true;
     config = ''
+
+  
+screenshot-path = "~/Media/Pictures/Schreenshots/%Y-%m-%d %H-%M-%S.png"
+
+hotkey-overlay {
+  skip-at-startup
+}
+
+environment {
+  QT_QPA_PLATFORM "wayland"
+  DISPLAY null
+}
 
 layout {
   border {
@@ -28,13 +42,6 @@ layout {
 }
 
 
-cursor {
-  xcursor-theme "Bibata Modern Classic"
-  xcursor-size 24
-
-  hide-when-typing
-  hide-after-inactive-ms 1000
-}
 
 binds {
   Mod+Q { spawn "kitty"; }
