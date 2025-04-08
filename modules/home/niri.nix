@@ -12,6 +12,7 @@
     enable = true;
     config = ''
 
+spawn-at-startup "swww"
   
 screenshot-path = "~/Media/Pictures/Schreenshots/%Y-%m-%d %H-%M-%S.png"
 
