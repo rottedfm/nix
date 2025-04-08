@@ -4,21 +4,21 @@ let
   phoenixDarkPinkTheme = ''
     themes {
       phoenix-dark-pink {
-        fg "#e0e0e0"        # base05
-        bg "#101010"        # base00
-        black "#101010"     # base00
-        red "#e64747"       # base08
-        green "#50fa7b"     # base0B
-        yellow "#ffb86c"    # base09
-        blue "#b294bb"      # base0D
-        magenta "#815f8d"   # base0E
-        cyan "#d1afdd"      # base0C
-        white "#e0e0e0"     # base05
-        orange "#ff79c6"    # base0A
-        gray "#201010"      # base01
-        dark-gray "#31182d" # base02
-        light-gray "#efefef" # base06
-        bg-alt "#201010"    # base01
+        fg "#e0e0e0"
+        bg "#101010"
+        black "#101010"
+        red "#e64747"
+        green "#50fa7b"
+        yellow "#ffb86c"
+        blue "#b294bb"
+        magenta "#815f8d"
+        cyan "#d1afdd"
+        white "#e0e0e0"
+        orange "#ff79c6"
+        gray "#201010"
+        dark-gray "#31182d"
+        light-gray "#efefef"
+        bg-alt "#201010"
       }
     }
   '';
@@ -28,12 +28,10 @@ in
     enable = true;
     enableZshIntegration = true;
 
-    # Write the Zellij theme config file
-    extraConfigFiles."themes/phoenix-dark-pink.kdl" = phoenixDarkPinkTheme;
-
-    # Set the theme in Zellij's settings
     settings = {
       theme = "phoenix-dark-pink";
     };
   };
+
+  home.file."config/zellij/themes/phoenix-dark-pink.kdl".text = phoenixDarkPinkTheme;
 }
