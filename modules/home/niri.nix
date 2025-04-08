@@ -32,7 +32,7 @@ layout {
 
 
 cursor {
-  xcursor-theme "Bibata Modern Classic"
+  xcursor-theme "'Bibata Modern Classic'"
   xcursor-size 24
 
   hide-when-typing
