@@ -12,10 +12,14 @@
     enable = true;
     config = ''
 
-spawn-at-startup "swww init"
+spawn-at-startup "swww-daemon"
 spawn-at-startup "swww img ~/.nix/wallpapers/pink-dream.jpg"
   
 screenshot-path "~/Media/Pictures/Schreenshots/%Y-%m-%d %H-%M-%S.png"
+
+window-rule {
+  draw-border-with-background false
+}
 
 hotkey-overlay {
   skip-at-startup

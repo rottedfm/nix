@@ -8,7 +8,6 @@
       enable_audio_bell = false;
       window_padding_width = 10;
       background_opacity = 0.3;
-      dynamic_background_opacity = true;
       # Colors from Phoenix Dark Pink
       foreground = "#e0e0e0";  # base05
       background = "#101010";  # base00
