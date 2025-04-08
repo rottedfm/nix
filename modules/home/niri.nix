@@ -13,8 +13,8 @@
 layout {
   border {
     width 6
-    active-gradient from="#ff79c6" to="#50fa7b" angle=45 
-    inactive-color "#201010"  
+    active-color "#ff79c6" 
+    inactive-color "#50fa7b"  
   }
 
 
