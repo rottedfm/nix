@@ -34,20 +34,11 @@ layout {
 
   focus-ring {
     off
-    width 6
-    active-color "#ff79c6" 
   }
 
   border {
     off
   }
-
-
-  tab-indicator {
-    off
-  }
-
-
 }
 
 
