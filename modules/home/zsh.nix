@@ -4,14 +4,6 @@
   programs.zsh = {
     enable = true;
     initExtra = ''
-function swww() {
-  if ! pgrep -x "swww-daemon" > /dev/null; then
-    swww init
-    sleep 1
-  fi
-
-  swww img "~/.nix/wallpapers/pink-dream.jpg"
-}
 
 function nixpush() {
   local repo="$HOME/.nix"
