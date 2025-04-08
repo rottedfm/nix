@@ -11,7 +11,7 @@
 
 layout {
   border {
-    width 4
+    width 8
     active-gradient from="#ffcfff" to="#ff79c6" angle=45 relative-to="workspace-view"
     inactive-gradient from="#31182d" to="#201010" angle=45 relative-to="workspace-view" in="srgb-linear"
   }
