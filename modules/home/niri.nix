@@ -27,14 +27,16 @@ layout {
     off
   }
 
-  cursor {
-    xcursor-theme "bibata_cursors"
-    xcursor-size 24
-
-    hide-when-typing
-    hide-after-inactive-ms 1000
-  }
   
+}
+
+
+cursor {
+  xcursor-theme "bibata_cursors"
+  xcursor-size 24
+
+  hide-when-typing
+  hide-after-inactive-ms 1000
 }
 
 binds {
