@@ -18,13 +18,6 @@ layout {
     inactive-gradient from="#31182d" to="#201010" angle=45 relative-to="workspace-view" in="srgb-linear"
   }
 
-  cursor {
-    xcursor-theme "bibata_cursors"
-    xcursor-size 24
-
-    hide-when-typing
-    hide-after-inactive-ms 1000
-  }
 
   tab-indicator {
     off
@@ -34,6 +27,13 @@ layout {
     off
   }
 
+  cursor {
+    xcursor-theme "bibata_cursors"
+    xcursor-size 24
+
+    hide-when-typing
+    hide-after-inactive-ms 1000
+  }
   
 }
 
