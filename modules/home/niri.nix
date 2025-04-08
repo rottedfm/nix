@@ -31,10 +31,9 @@ environment {
 }
 
 layout {
-  border {
+  focus-ring {
     width 6
     active-color "#ff79c6" 
-    inactive-color "#201010"  
   }
 
 
