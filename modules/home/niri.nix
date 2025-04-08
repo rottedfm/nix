@@ -23,9 +23,7 @@ layout {
 
   focus-ring {
     off
-  }
-
-  
+  }  
 }
 
 
