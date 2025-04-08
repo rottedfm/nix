@@ -30,6 +30,9 @@
     # work.
     less
 
+    # lmms
+    lmms
+
     # gba emulator
     vbam
 
