@@ -13,6 +13,7 @@
     ./xmrig.nix
     ./bluetooth.nix
     ./sound.nix
+    ./fonts.nix
   ];
   services.openssh.enable = true;
 }
