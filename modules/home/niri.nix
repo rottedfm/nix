@@ -11,15 +11,13 @@
 
 layout {
   border {
-    active-gradient from="#ff79c6" to="#714161" angle=45 relative-to="workspace-view"
-    inactive-gradient from="#31182d" to="#201010" angle=45 relative-to="workspace-view" in="srgb-linear"
+    width 4
+    active-gradient from="#ffcfff" to="#ff79c6" angle=45 relative-to="workspace-view"
+    inactive-gradient from="#412181" to="#101010" angle=45 relative-to="workspace-view" in="srgb-linear"
   }
 
   focus-ring {
     off
-    width 4
-    active-gradient from="#ff79c6" to="#714161" angle=45
-    inactive-gradient from="#31182d" to="#201010" angle=45 relative-to="workspace-view"
   }
 
   
