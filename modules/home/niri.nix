@@ -12,7 +12,8 @@
     enable = true;
     config = ''
 
-spawn-at-startup "swww"
+spawn-at-startup "swww init"
+spawn-at-startup "swww img ~/.nix/wallpapers/pink-dream.jpg"
   
 screenshot-path "~/Media/Pictures/Schreenshots/%Y-%m-%d %H-%M-%S.png"
 
