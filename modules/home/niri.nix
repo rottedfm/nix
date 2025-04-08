@@ -5,7 +5,7 @@
     flake.inputs.niri-flake.homeModules.niri
   ];
 
-  home.package = [ pkgs.bibata-cursors ];
+  home.packages = [ pkgs.bibata-cursors ];
 
   programs.niri = {
     enable = true;
