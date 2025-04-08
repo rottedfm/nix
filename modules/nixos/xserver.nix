@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
   services.xserver = {
@@ -9,4 +9,6 @@
       cinnamon.enable = true;
     };
   };
+
+  environment.systemPackages = [ pkgs.bibata-cursors ];
 }

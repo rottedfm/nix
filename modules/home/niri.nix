@@ -1,11 +1,9 @@
-{ flake, pkgs, ... }:
+{ flake, ... }:
 
 {
   imports = [
     flake.inputs.niri-flake.homeModules.niri
   ];
-
-  home.packages = [ pkgs.bibata-cursors ];
 
   programs.niri = {
     enable = true;
@@ -32,7 +30,7 @@ layout {
 
 
 cursor {
-  xcursor-theme "'Bibata Modern Classic'"
+  xcursor-theme "Bibata Modern Classic"
   xcursor-size 24
 
   hide-when-typing
