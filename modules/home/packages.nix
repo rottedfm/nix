@@ -33,6 +33,9 @@
     # lmms
     lmms
 
+    # krunker
+    krunker
+    
     # gba emulator
     vbam
 
