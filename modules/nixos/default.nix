@@ -10,7 +10,6 @@
     ./gpg.nix
     ./ollama.nix
     ./zsh.nix
-    ./xmrig.nix
     ./bluetooth.nix
     ./sound.nix
     ./fonts.nix
