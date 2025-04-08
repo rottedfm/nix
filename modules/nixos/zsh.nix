@@ -9,7 +9,6 @@
     shellAliases = {
       sync = "nixpush";
       cd = "z";
-      swww = "swww";
     };
   };
 }
