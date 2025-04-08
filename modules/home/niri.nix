@@ -1,9 +1,11 @@
-{ flake, ... }:
+{ flake, pkgs, ... }:
 
 {
   imports = [
     flake.inputs.niri-flake.homeModules.niri
   ];
+
+  home.package = [ pkgs.bibata-cursors ];
 
   programs.niri = {
     enable = true;
@@ -14,6 +16,14 @@ layout {
     width 6
     active-gradient from="#ffcfff" to="#d1afdd" angle=45 relative-to="workspace-view"
     inactive-gradient from="#31182d" to="#201010" angle=45 relative-to="workspace-view" in="srgb-linear"
+  }
+
+  cursor {
+    xcursor-theme "bibata_cursors"
+    xcursor-size 24
+
+    hide-when-typing
+    hid-after-inactive ms 1000
   }
 
   tab-indicator {
