@@ -22,7 +22,7 @@
     nixpkgs-fmt
 
     # monero 
-    monero-cli
+    monero-gui
     xmrig
 
 
