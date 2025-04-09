@@ -5,6 +5,7 @@
     noto-fonts-emoji
     noto-fonts-cjk-sans
     nerd-fonts.jetbrains-mono
+    terminus_font
   ];
 
 
