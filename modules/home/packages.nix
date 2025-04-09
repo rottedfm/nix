@@ -14,6 +14,7 @@
     eza
     fzf
     glow
+    ttyper
 
     # Nix dev
     cachix
