@@ -18,6 +18,7 @@
     tenki
     neofetch
     cmatrix
+    btop
     
 
     # Nix dev
@@ -60,8 +61,6 @@
     # Type `<ctrl> + r` to fuzzy search your shell history
     fzf.enable = true;
     jq.enable = true;
-    # Install btop https://github.com/aristocratos/btop
-    btop.enable = true;
     # Tmate terminal sharing.
     tmate = {
       enable = true;
