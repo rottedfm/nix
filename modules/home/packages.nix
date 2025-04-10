@@ -15,6 +15,10 @@
     fzf
     glow
     ttyper
+    tenki
+    neofetch
+    cmatrix
+    
 
     # Nix dev
     cachix
