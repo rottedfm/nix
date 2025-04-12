@@ -10,6 +10,7 @@
     sd
     tree
     gnumake
+    cava
     pass
     eza
     fzf
