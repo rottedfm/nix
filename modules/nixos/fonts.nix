@@ -1,6 +1,13 @@
 { ... }:
 
 {
+ environment.systemPackages = with pkgs; [
+  nerd-fonts.jetbrains-mono
+  font-awesome
+  noto-fonts-cjk-sans
+  noto-fonts-emoji
+];
+
 console = {
   colors = [
     # Standard colors (0–7)

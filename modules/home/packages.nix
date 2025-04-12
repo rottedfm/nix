@@ -20,13 +20,6 @@
     cmatrix
     btop
 
-    # nerdfonts/font-awesome
-    nerd-fonts.jetbrains-mono
-    font-awesome
-    noto-fonts-cjk-sans
-    noto-fonts-emoji
-    
-
     # Nix dev
     cachix
     nil # Nix language server
