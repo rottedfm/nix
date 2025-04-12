@@ -19,6 +19,7 @@
     neofetch
     cmatrix
     btop
+    yt-dlp
 
     # Nix dev
     cachix
