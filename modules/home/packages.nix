@@ -21,8 +21,10 @@
     btop
 
     # nerdfonts/font-awesome
-    nerd-fonts
+    nerd-fonts.jetbrains-mono
     font-awesome
+    noto-fonts-cjk-sans
+    noto-fonts-emoji
     
 
     # Nix dev

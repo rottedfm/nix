@@ -1,14 +1,6 @@
-{ pkgs, ... }:
+{ ... }:
 
 {
-  fonts.packages = with pkgs; [
-    noto-fonts-emoji
-    noto-fonts-cjk-sans
-    jetbrains-mono
-    nerdfonts
-    font-awesome
-  ];
-
 console = {
   colors = [
     # Standard colors (0–7)
