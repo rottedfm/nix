@@ -19,6 +19,10 @@
     neofetch
     cmatrix
     btop
+
+    # nerdfonts/font-awesome
+    nerd-fonts
+    font-awesome
     
 
     # Nix dev
@@ -29,8 +33,8 @@
 
     # monero 
     monero-gui
+    monero-cli
     xmrig
-
 
     # On ubuntu, we need this less for `man home-configuration.nix`'s pager to
     # work.
@@ -38,9 +42,6 @@
 
     # lmms
     lmms
-
-    # krunker
-    krunker
     
     # gba emulator
     vbam

@@ -18,6 +18,8 @@
       cursor_text_color = "#101010";  # base00
       url_color = "#b294bb";  # base0D
 
+      font = "JetBrainsMono";
+
       # Standard 16-color palette
       color0  = "#101010";  # base00 - black
       color1  = "#e64747";  # base08 - red
