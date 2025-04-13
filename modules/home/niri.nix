@@ -33,7 +33,6 @@ environment {
 layout {
 
   focus-ring {
-    on
   }
 
   border {
