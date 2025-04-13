@@ -15,7 +15,7 @@
       selection_background = "#412b3f";  # base03
       selection_foreground = "#e0e0e0";  # base05
       cursor = "#e0e0e0";  # base05
-      cursor_text_color = "#";  # base00
+      cursor_text_color = "#ff79c6";  # base00
       url_color = "#b294bb";  # base0D
       # Standard 16-color palette
       color1 = "#121212";  # color0 - dark base (slightly lifted from #101010 for legibility)
