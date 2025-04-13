@@ -13,7 +13,7 @@
     config = ''
 
 spawn-at-startup "swww-daemon"
-spawn-at-startup "swww img ~/.nix/wallpapers/pink-dream.jpg"
+spawn-at-startup "swww img ~/.nix/wallpapers/minimal.gif"
   
 screenshot-path "~/Media/Pictures/Schreenshots/%Y-%m-%d %H-%M-%S.png"
 
