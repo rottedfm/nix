@@ -56,7 +56,6 @@ binds {
   Mod+K { focus-window-up; }
   Mod+L { focus-column-right; }
 
-  Mod+R { focus-column-first; }
   Mod+F { fullscreen-window; }
 
   Mod+S { screenshot-screen; }
