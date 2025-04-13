@@ -46,7 +46,7 @@ layout {
 binds {
   Mod+Q { spawn "kitty"; }
   Mod+V { spawn "librewolf"; }
-  Mod+R { spawn "kitty ./home/rotted/Scripts/run/target/release/run"; }
+  Mod+R { spawn "kitty /home/rotted/Scripts/run/target/release/run"; }
 
   Mod+C { close-window; }
   Mod+M { quit skip-confirmation=true; }
