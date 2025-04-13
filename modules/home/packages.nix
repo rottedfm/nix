@@ -21,6 +21,7 @@
     cmatrix
     btop
     yt-dlp
+    bottom
 
     # Nix dev
     cachix
