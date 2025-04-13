@@ -33,7 +33,7 @@ environment {
 layout {
 
   focus-ring {
-    active-gradient from="#50fa7b" to="#ff79c6" angle 45 
+    active-gradient from="#50fa7b" to="#ff79c6" angle=45 
   }
 
   border {
