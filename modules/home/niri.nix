@@ -14,7 +14,6 @@
 
 spawn-at-startup "swww-daemon"
 spawn-at-startup "swww img ~/.nix/wallpapers/pink-dream.jpg"
-spawn-at-startup "kitty /home/rotted/Scripts/run/target/release/run"
   
 screenshot-path "~/Media/Pictures/Schreenshots/%Y-%m-%d %H-%M-%S.png"
 
