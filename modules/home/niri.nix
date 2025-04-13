@@ -13,7 +13,7 @@
     config = ''
 
 spawn-at-startup "swww-daemon"
-spawn-at-startup "swww img ~/.nix/wallpapers/minimal.gif"
+spawn-at-startup "swww img ~/.nix/wallpapers/pink-dream.jpg"
   
 screenshot-path "~/Media/Pictures/Schreenshots/%Y-%m-%d %H-%M-%S.png"
 
@@ -33,6 +33,7 @@ environment {
 layout {
 
   focus-ring {
+    active-gradient from="#50fa7b" to="ff79c6" angle 45 
   }
 
   border {
