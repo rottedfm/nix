@@ -14,6 +14,7 @@
 
 spawn-at-startup "swww-daemon"
 spawn-at-startup "swww img ~/.nix/wallpapers/pink-dream.jpg"
+spawn-at-startup "kitty /home/rotted/Scripts/run/target/release/run"
   
 screenshot-path "~/Media/Pictures/Schreenshots/%Y-%m-%d %H-%M-%S.png"
 
@@ -46,7 +47,6 @@ layout {
 binds {
   Mod+Q { spawn "kitty"; }
   Mod+V { spawn "librewolf"; }
-  Mod+R { spawn "kitty '/home/rotted/Scripts/run/target/release/run'"; }
 
   Mod+C { close-window; }
   Mod+M { quit skip-confirmation=true; }
@@ -55,6 +55,8 @@ binds {
   Mod+J { focus-window-down; }
   Mod+K { focus-window-up; }
   Mod+L { focus-column-right; }
+
+  Mod+R { focus-first-column; }
 
   Mod+F { fullscreen-window; }
 
