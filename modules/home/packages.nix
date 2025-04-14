@@ -40,6 +40,7 @@
 
     # lmms
     lmms
+    audacity
     
     # gba emulator
     vbam
