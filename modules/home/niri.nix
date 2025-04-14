@@ -31,7 +31,7 @@ environment {
 }
 
 layout {
-  gaps 16
+  gaps 32
 
   focus-ring {
     active-gradient from="#50fa7b" to="#ff79c6" angle=45 
