@@ -29,23 +29,13 @@ function minecraft_wayland() {
   export _JAVA_AWT_WM_NONREPARENTING=1
   export WLR_NO_HARDWARE_CURSORS=1
 
-  export __GLX_VENDOR_LIBRARY_NAME=mesa
-  export LIBGL_ALWAYS_INDIRECT=0
-  export GALLIUM_DRIVER=radeonsi
-  export LIBGL_DRI3_DISABLE=0
-  export MESA_LOADER_DRIVER_OVERRIDE=radeonsi
+  # Unset LD_PRELOAD to avoid corrupting context creation
+  unset LD_PRELOAD
 
-  local glfw_path
-  glfw_path=$(nix eval --raw nixpkgs#glfw-wayland)/lib/libglfw.so.3
-
-  if [[ -f "$glfw_path" ]]; then
-    export LD_PRELOAD="$glfw_path"
-  else
-    echo "Failed to locate glfw-wayland lib, skipping LD_PRELOAD."
-  fi
-
-  portablemc start fabric:1.21.1 --jvm-args="-Xmx12G" "$@"
+  # Run Minecraft without forcing glfw preload
+  portablemc start fabric:1.21.1 --jvm-args="-Xmx16G" "$@"
 }
+
    '';
     antidote = {
       enable = true;
