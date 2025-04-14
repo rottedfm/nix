@@ -28,7 +28,6 @@ hotkey-overlay {
 environment {
   QT_QPA_PLATFORM "wayland"
   DISPLAY null
-  _JAVA_AWT_WM_NONREPARENTING 1
   GDK_BACKEND "wayland"
   SDL_VIDEODRIVER "wayland"
   CLUTTER_BACKEND "wayland"
