@@ -3,7 +3,7 @@
 
 {
   imports = [
-    flake.inputs.niri-flake.homeModules.niri-unstable
+    flake.inputs.niri-flake.homeModules.niri
   ];
 
   home.packages = [ pkgs.swww ];

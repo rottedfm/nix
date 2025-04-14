@@ -47,6 +47,7 @@
 
     # minecraft
     portablemc
+    glfw-wayland-minecraft
     
     # qbittorrent
     qbittorrent
