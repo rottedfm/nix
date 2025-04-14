@@ -3,14 +3,13 @@
 
 {
   imports = [
-    flake.inputs.niri-flake.homeModules.niri
+    flake.inputs.niri-flake.homeModules.niri-unstable
   ];
 
   home.packages = [ pkgs.swww ];
 
   programs.niri = {
     enable = true;
-    package = pkgs.niri-unstable;
     config = ''
 
 spawn-at-startup "swww-daemon"
