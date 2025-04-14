@@ -10,7 +10,6 @@
 
   programs.niri = {
     enable = true;
-    package = pkgs.niri;
     config = ''
 
 spawn-at-startup "swww-daemon"
@@ -32,12 +31,17 @@ environment {
 }
 
 layout {
+  gaps 16
 
   focus-ring {
     active-gradient from="#50fa7b" to="#ff79c6" angle=45 
   }
 
   border {
+    off
+  }
+
+  tab-indicator {
     off
   }
 }
@@ -58,7 +62,7 @@ binds {
 
   Mod+R { focus-column-first; }
 
-  Mod+F { toggle-windowed-fullscreen; }
+  Mod+F { fullscreen-window; }
 
   Mod+S { screenshot-screen; }
   Mod+Shift+S { screenshot-window; }
