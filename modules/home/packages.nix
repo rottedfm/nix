@@ -47,6 +47,7 @@
 
     # minecraft
     portablemc
+    pciutils
     
     # qbittorrent
     qbittorrent

@@ -19,6 +19,28 @@ function nixpush() {
 
   nix run $repo#activate
 }
+
+minecraft_wayland() {
+  export GDK_BACKEND=wayland
+  export SDL_VIDEODRIVER=wayland
+  export QT_QPA_PLATFORM=wayland
+  export LIBGL_ALWAYS_SOFTWARE=0
+  export MESA_NO_ERROR=1
+  export _JAVA_AWT_WM_NONREPARENTING=1
+  export WLR_NO_HARDWARE_CURSORS=1
+
+  local glfw_path
+  glfw_path=$(nix eval --raw nixpkgs#glfw-wayland)/lib/libglfw.so.3
+
+  if [[ -f "$glfw_path" ]]; then
+    export LD_PRELOAD="$glfw_path"
+  else
+    echo "Failed to locate glfw-wayland lib, skipping LD_PRELOAD."
+  fi
+
+  # Pass all arguments to portablemc (you can also hardcode your default version here)
+  portablemc start fabric:1.21.1 --jvm-args="-Xmx16G" "$@"
+}
     '';
     antidote = {
       enable = true;
