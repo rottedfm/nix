@@ -20,12 +20,15 @@ function nixpush() {
   nix run $repo#activate
 }
 
-minecraft_wayland() {
+function minecraft_wayland() {
   export GDK_BACKEND=wayland
   export SDL_VIDEODRIVER=wayland
   export QT_QPA_PLATFORM=wayland
   export LIBGL_ALWAYS_SOFTWARE=0
+  export MESA_NO_ERROR=1
   export _JAVA_AWT_WM_NONREPARENTING=1
+  export WLR_NO_HARDWARE_CURSORS=1
+
   export __GLX_VENDOR_LIBRARY_NAME=mesa
   export LIBGL_ALWAYS_INDIRECT=0
   export GALLIUM_DRIVER=radeonsi
@@ -41,10 +44,9 @@ minecraft_wayland() {
     echo "Failed to locate glfw-wayland lib, skipping LD_PRELOAD."
   fi
 
-  # Pass all arguments to portablemc (you can also hardcode your default version here)
-  portablemc start fabric:1.21.1 --jvm-args="-Xmx16G" "$@"
+  portablemc start fabric:1.21.1 --jvm-args="-Xmx12G" "$@"
 }
-    '';
+   '';
     antidote = {
       enable = true;
       package = pkgs.antidote;
