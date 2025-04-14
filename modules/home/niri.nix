@@ -10,7 +10,7 @@
 
   programs.niri = {
     enable = true;
-    packages = pkgs.niri;
+    package = pkgs.niri;
     config = ''
 
 spawn-at-startup "swww-daemon"
