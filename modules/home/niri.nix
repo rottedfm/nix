@@ -10,6 +10,7 @@
 
   programs.niri = {
     enable = true;
+    packages = pkgs.niri;
     config = ''
 
 spawn-at-startup "swww-daemon"
@@ -57,7 +58,7 @@ binds {
 
   Mod+R { focus-column-first; }
 
-  # Mod+F { toggle-windowed-fullscreen; }
+  Mod+F { toggle-windowed-fullscreen; }
 
   Mod+S { screenshot-screen; }
   Mod+Shift+S { screenshot-window; }
