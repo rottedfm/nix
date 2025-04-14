@@ -28,6 +28,11 @@ hotkey-overlay {
 environment {
   QT_QPA_PLATFORM "wayland"
   DISPLAY null
+  LIBGL_ALWAYS_SOFTWARE 0
+  _JAVA_AWT_WM_NONREPARENTING 1
+  LD_LIBRARY_PATH "/run/opengl-driver/lib:$LD_LIBRARY_PATH"
+  LD_PRELOAD "/nix/store/$(find /nix/store -name '*glfw-wayland*' | grep lib | head -n 1)/lib/libglfw.so.2"
+
 }
 
 layout {
