@@ -46,7 +46,7 @@
     vbam
 
     # minecraft
-    portablemc
+    prismlauncher
     pciutils
     
     # qbittorrent
