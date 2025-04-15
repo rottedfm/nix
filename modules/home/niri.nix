@@ -56,7 +56,7 @@ binds {
   Mod+V { spawn "librewolf"; }
 
   Mod+C { close-window; }
-  Mod+M { quit skip-confirmation=true; }
+  Mod+Control+M { quit skip-confirmation=true; }
 
   Mod+H { focus-column-left; }
   Mod+J { focus-window-down; }
