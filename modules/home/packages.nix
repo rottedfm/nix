@@ -38,6 +38,9 @@
     # work.
     less
 
+    # firefox
+    firefox
+
     # lmms
     lmms
     audacity
