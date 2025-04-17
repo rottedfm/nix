@@ -11,7 +11,13 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
+  hardware.firmware = with pkgs; [
+    linux-firmware
+  ];
+  hardware.enableAllFirmware = true;
+
   networking.hostName = "fm"; # Define your hostname.
+  networking.nameservers = [ "8.8.8.8" "1.1.1.1" ];
 
   # Enable networking
   networking.networkmanager.enable = true;

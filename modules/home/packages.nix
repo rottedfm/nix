@@ -47,10 +47,6 @@
     
     # gba emulator
     vbam
-
-    # minecraft
-    prismlauncher
-    pciutils
     
     # qbittorrent
     qbittorrent
