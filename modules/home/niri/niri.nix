@@ -37,7 +37,7 @@ environment {
 
 output "LG Electronics LG SMART WQHD 0x01010101" {
   mode "3440x1440@99.982"
-  scale 1.5
+  scale 1.0
 }
 
 layout {
