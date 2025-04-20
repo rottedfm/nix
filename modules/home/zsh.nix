@@ -5,6 +5,10 @@
     enable = true;
     initExtra = ''    
 
+if [[ -z $WAYLAND_DISPLAY ]] && [[ $(tty) == /dev/tty1 ]]; then
+  exec dbus-run-session niri
+fi
+
 function nixpush() {
   local repo="$HOME/.nix"
   if [[ ! -d "$repo/.git" ]]; then
