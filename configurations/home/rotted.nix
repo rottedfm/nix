@@ -1,4 +1,4 @@
-{ flake, pkgs, ... }:
+{ flake, pkgs, niri, ... }:
 let
   inherit (flake) inputs;
   inherit (inputs) self;
@@ -6,6 +6,10 @@ in
 {
   imports = [
     self.homeModules.default
+  ];
+
+  nixpkgs.overlays = [
+    niri.overlays.niri 
   ];
 
   # Defined by /modules/home/me.nix

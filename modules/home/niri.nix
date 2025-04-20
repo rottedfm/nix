@@ -1,5 +1,5 @@
 
-{ flake, pkgs, niri, ... }:
+{ flake, pkgs, ... }:
 
 {
   imports = [
@@ -8,14 +8,13 @@
 
   home.packages = [ pkgs.swww ];
 
-  nixpkgs.overlays = [ niri.overlays.niri ];
   programs.niri = {
     enable = true;
-    package = pkgs.niri-unstable;
     config = ''
 
 spawn-at-startup "swww-daemon"
 spawn-at-startup "swww img ~/.nix/wallpapers/black-minimal.gif"
+spawn-at-startup "exec mako"
   
 screenshot-path "~/Media/Pictures/Schreenshots/%Y-%m-%d %H-%M-%S.png"
 
