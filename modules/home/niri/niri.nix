@@ -6,7 +6,7 @@
     flake.inputs.niri-flake.homeModules.niri
   ];
 
-  home.packages = [ pkgs.swww pkgs.bc pkgs.wl-clipboard pkgs.wayland-utils ];
+  home.packages = [ pkgs.xwayland-satellite pkgs.swww pkgs.bc pkgs.wl-clipboard pkgs.wayland-utils ];
 
   programs.niri = {
     enable = true;
