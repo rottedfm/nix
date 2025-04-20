@@ -8,7 +8,7 @@
       hide_window_decorations = true;
       enable_audio_bell = false;
       window_padding_width = 10;
-      font_size = 14.0;
+      font_size = 16.0;
       font_family = "Jetbrains Nerd Font Mono";
       background_opacity = 0.65;
       # Colors from Phoenix Dark Pink

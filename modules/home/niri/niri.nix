@@ -35,10 +35,16 @@ environment {
   CLUTTER_BACKEND "wayland"
 }
 
+output "LG Electronics LG SMART WQHD 0x01010101" {
+  mode "3440x1440@99.982"
+  scale 2
+}
+
 layout {
   gaps 32
 
   focus-ring {
+    width 6
     active-gradient from="#50fa7b" to="#ff79c6" angle=45 
   }
 
@@ -65,7 +71,7 @@ binds {
   Mod+K { focus-window-up; }
   Mod+L { focus-column-right; }
 
-  Mod+R { set-column-width "33%"; }
+  Mod+R { set-column-width "50%"; }
 
   Mod+F { set-column-width "100%"; }
 
