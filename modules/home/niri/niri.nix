@@ -15,7 +15,6 @@
 
 spawn-at-startup "swww-daemon"
 spawn-at-startup "swww img ~/.nix/wallpapers/black-minimal.gif"
-spawn-at-startup "exec mako"
   
 screenshot-path "~/Media/Pictures/Schreenshots/%Y-%m-%d %H-%M-%S.png"
 
