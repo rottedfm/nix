@@ -1,7 +1,8 @@
-{ flake, pkgs, niri, ... }:
+{ flake, pkgs, ... }:
 let
   inherit (flake) inputs;
   inherit (inputs) self;
+  inherit (flake.inputs) niri-flake;
 in
 {
   imports = [
@@ -9,7 +10,7 @@ in
   ];
 
   nixpkgs.overlays = [
-    niri.overlays.niri 
+    niri-flake.overlays.niri 
   ];
 
   # Defined by /modules/home/me.nix
