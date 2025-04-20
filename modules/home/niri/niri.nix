@@ -59,7 +59,13 @@ layout {
   }
 }
 
+cursor {
+  xcursor-theme "Bibata Modern Classic"
+  xcusor-size 24
 
+  hide-when-typing
+  hide-after-inactive-ms 1000
+}
 
 binds {
   Mod+Q { spawn "kitty"; }
