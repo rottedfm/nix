@@ -6,7 +6,7 @@
     flake.inputs.niri-flake.homeModules.niri
   ];
 
-  home.packages = [ pkgs.swww ];
+  home.packages = [ pkgs.swww pkgs.bc pkgs.wl-clipboard pkgs.wayland-wayland-utils ];
 
   programs.niri = {
     enable = true;
@@ -67,7 +67,7 @@ binds {
 
   Mod+R { focus-column-first; }
 
-  Mod+F { set-column-width "100%"; }
+  Mod+F { spawn "~/.nix/modules/home/niri/toggle-fullscreen.zsh"; }
 
   Mod+S { screenshot-screen; }
   Mod+Shift+S { screenshot-window; }
