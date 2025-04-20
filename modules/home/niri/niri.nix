@@ -15,6 +15,7 @@
 
 spawn-at-startup "swww-daemon"
 spawn-at-startup "swww img ~/.nix/wallpapers/black-minimal.gif"
+spawn-at-startup "xwayland-satellite"
   
 screenshot-path "~/Media/Pictures/Schreenshots/%Y-%m-%d %H-%M-%S.png"
 
@@ -32,6 +33,7 @@ environment {
   GDK_BACKEND "wayland"
   SDL_VIDEODRIVER "wayland"
   CLUTTER_BACKEND "wayland"
+  DISPLAY ":0"
 }
 
 output "LG Electronics LG SMART WQHD 0x01010101" {
