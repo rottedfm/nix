@@ -4,7 +4,7 @@
   services.xserver = {
     enable = true;
     videoDrivers = [ "amdgpu" ];
-    displayManager.startx.enable = true;
+    displayManager.ly.enable = true;
   };
 
   environment.systemPackages = [ pkgs.bibata-cursors ];
