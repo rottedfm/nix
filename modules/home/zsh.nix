@@ -3,11 +3,7 @@
 {
   programs.zsh = {
     enable = true;
-    initExtra = ''
-
-if [[ -z $WAYLAND_DISPLAY ]] && [[ $(tty) == /dev/tty1 ]]; then
-  exec dbus-run-session niri
-fi
+    initExtra = ''    
 
 function nixpush() {
   local repo="$HOME/.nix"
