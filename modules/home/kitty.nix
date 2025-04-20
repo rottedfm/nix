@@ -8,6 +8,7 @@
       hide_window_decorations = true;
       enable_audio_bell = false;
       window_padding_width = 10;
+      font_size = 14.0;
       background_opacity = 0.7;
       # Colors from Phoenix Dark Pink
       foreground = "#e0e0e0";  # base05

@@ -13,7 +13,7 @@
     config = ''
 
 spawn-at-startup "swww-daemon"
-spawn-at-startup "swww img ~/.nix/wallpapers/chromeheart.jpg"
+spawn-at-startup "swww img ~/.nix/wallpapers/black-minimal.gif"
   
 screenshot-path "~/Media/Pictures/Schreenshots/%Y-%m-%d %H-%M-%S.png"
 
@@ -34,7 +34,7 @@ environment {
 }
 
 layout {
-  gaps 32
+  gaps 16
 
   focus-ring {
     active-gradient from="#50fa7b" to="#ff79c6" angle=45 
