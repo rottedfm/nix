@@ -1,5 +1,5 @@
 
-{ flake, pkgs, ... }:
+{ flake, pkgs, niri, ... }:
 
 {
   imports = [
@@ -8,8 +8,10 @@
 
   home.packages = [ pkgs.swww ];
 
+  nixpkgs.overlays = [ niri.overlays.niri ];
   programs.niri = {
     enable = true;
+    package = pkgs.niri-unstable;
     config = ''
 
 spawn-at-startup "swww-daemon"
@@ -34,7 +36,7 @@ environment {
 }
 
 layout {
-  gaps 16
+  gaps 32
 
   focus-ring {
     active-gradient from="#50fa7b" to="#ff79c6" angle=45 
