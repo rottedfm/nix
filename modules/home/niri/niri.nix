@@ -67,7 +67,7 @@ binds {
 
   Mod+R { set-column-width "33%"; }
 
-  Mod+F { set-column-width "100%" }
+  Mod+F { set-column-width "100%"; }
 
   Mod+S { screenshot-screen; }
   Mod+Shift+S { screenshot-window; }

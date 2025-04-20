@@ -10,7 +10,7 @@
       window_padding_width = 10;
       font_size = 14.0;
       font_family = "Jetbrains Nerd Font Mono";
-      background_opacity = 0.75;
+      background_opacity = 0.55;
       # Colors from Phoenix Dark Pink
       foreground = "#e0e0e0";  # base05
       background = "#101010";  # base00
