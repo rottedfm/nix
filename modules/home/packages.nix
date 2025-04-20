@@ -50,6 +50,8 @@
 
     # minecraft
     prismlauncher
+
+    gamescope
     
     # qbittorrent
     qbittorrent
