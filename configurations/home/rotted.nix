@@ -2,15 +2,10 @@
 let
   inherit (flake) inputs;
   inherit (inputs) self;
-  inherit (flake.inputs) niri-flake;
 in
 {
   imports = [
     self.homeModules.default
-  ];
-
-  nixpkgs.overlays = [
-    niri-flake.overlays.niri 
   ];
 
   # Defined by /modules/home/me.nix
