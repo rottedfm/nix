@@ -67,7 +67,7 @@ binds {
 
   Mod+R { focus-column-first; }
 
-  Mod+F { toggle-windowed-fullscreen; }
+  Mod+F { set-column-width "100%"; }
 
   Mod+S { screenshot-screen; }
   Mod+Shift+S { screenshot-window; }
@@ -78,6 +78,11 @@ binds {
   Mod+Shift+J { move-window-down; }
   Mod+Shift+K { move-window-up; }
   Mod+Shift+L { move-column-right; }
+
+  Mod+Control+H { set-column-width "-5%"; }
+  Mod+Control+L { set-column-width "+5%"; }
+  Mod+Control+J { set-window-height "-5%"; }
+  Mod+Control+K { set-window-height "+5%"; }
 
   Mod+Comma { consume-window-into-column; }
   Mod+Period { expel-window-from-column; }
