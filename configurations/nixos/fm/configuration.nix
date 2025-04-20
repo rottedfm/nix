@@ -1,5 +1,8 @@
-{ config, pkgs, ... }:
+{ flake, pkgs, ... }:
 
+let
+  inherit (flake.inputs) niri-flake;
+in 
 {
   imports =
     [
@@ -55,6 +58,9 @@
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
+  nixpkgs.overlays = [
+    niri-flake.overlays.niri
+  ];
 
   # Enable flakes and the 'nix' command
   nix.settings.experimental-features = [ "flakes" "nix-command" ];

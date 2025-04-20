@@ -1,16 +1,9 @@
 
 { flake, pkgs, ... }:
 
-let
-  inherit (flake.inputs) niri-flake;
-in
 {
   imports = [
     flake.inputs.niri-flake.homeModules.niri
-  ];
-
-  nixpkgs.overlays = [
-    niri-flake.overlays.niri
   ];
 
   home.packages = [ pkgs.swww ];
