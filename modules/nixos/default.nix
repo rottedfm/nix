@@ -13,6 +13,7 @@
     ./bluetooth.nix
     ./sound.nix
     ./fonts.nix
+    ./steam.nix
   ];
   services.openssh.enable = true;
 }
