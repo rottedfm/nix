@@ -65,9 +65,9 @@ binds {
   Mod+K { focus-window-up; }
   Mod+L { focus-column-right; }
 
-  Mod+R { focus-column-first; }
+  Mod+R { set-column-width "33%"; }
 
-  Mod+F { spawn "~/.nix/modules/home/niri/toggle-fullscreen.zsh"; }
+  Mod+F { set-column-width "100%" }
 
   Mod+S { screenshot-screen; }
   Mod+Shift+S { screenshot-window; }
