@@ -67,7 +67,7 @@ binds {
 
   Mod+R { focus-column-first; }
 
-  Mod+F { fullscreen-window; }
+  Mod+F { toggle-windowed-fullscreen; }
 
   Mod+S { screenshot-screen; }
   Mod+Shift+S { screenshot-window; }
