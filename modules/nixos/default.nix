@@ -14,6 +14,7 @@
     ./sound.nix
     ./fonts.nix
     ./steam.nix
+    ./gamescope.nix
   ];
   services.openssh.enable = true;
 }
