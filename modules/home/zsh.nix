@@ -10,7 +10,6 @@ if [[ -z $WAYLAND_DISPLAY ]] && [[ $(tty) == /dev/tty1 ]]; then
 fi
 
 if [[ -z $WAYLAND_DISPLAY ]] && [[ $(tty) == /dev/tty2 ]]; then
-  export WLR_NO_HARDWARE_CURSORS=1
   export GAMESCOPE_COLORSPACE=srgb
   export GAMESCOPE_DISPLAY_REFRESH=100
 fi
