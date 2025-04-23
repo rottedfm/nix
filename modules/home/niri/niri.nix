@@ -29,7 +29,6 @@ hotkey-overlay {
 
 environment {
   QT_QPA_PLATFORM "wayland"
-  WLR_NO_HARDWARE_CURSORS "1"
   GDK_BACKEND "wayland"
   SDL_VIDEODRIVER "wayland"
   CLUTTER_BACKEND "wayland"
