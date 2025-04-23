@@ -5,6 +5,9 @@
 
   services.dbus.enable = true;
 
-  xdg.portal.enable = true;
-  xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+  xdg.portal = {
+    enable = true;
+    config.common.default = "*";  # <- this suppresses the warning
+    extraPortals = [ pkgs.xdg-desktop-portal-gtk ];  # or plasma/gnome
+  };
 }
