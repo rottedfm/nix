@@ -8,4 +8,3 @@
   xdg.portal.enable = true;
   xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ]; # or plasma/gnome depending on your setup
 }
-}
