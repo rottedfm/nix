@@ -26,6 +26,15 @@ hotkey-overlay {
   skip-at-startup
 }
 
+environment {
+  XDG_SESSION_TYPE "wayland"
+  QT_QPA_PLATFORM "wayland"
+  SDL_VIDEODRIVER "wayland"
+  CLUTTER_BACKEND "wayland"
+  MOZ_ENABLE_WAYLAND "1"
+  WLR_NO_HARDWARE_CURSORS "1"
+}
+
 output "LG Electronics LG SMART WQHD 0x01010101" {
   mode "3440x1440@99.982"
   scale 1.2
