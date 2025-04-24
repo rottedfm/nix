@@ -4,7 +4,7 @@
   programs.helix = {
     enable = true;
     settings = {
-      theme = "base16_transparent";
+      theme = "base16_terminal";
       editor.cursor-shape = {
         normal = "block";
         insert = "bar";

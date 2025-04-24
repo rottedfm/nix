@@ -9,5 +9,5 @@
     displayManager.startx.enable = true;
   };
 
-  environment.systemPackages = [ pkgs.bibata-cursors ];
+  environment.systemPackages = [ pkgs.xwayland pkgs.xwayland-satellite pkgs.bibata-cursors ];
 }

@@ -53,7 +53,7 @@ in
   users.users.rotted = {
     isNormalUser = true;
     description = "rotted";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "input" "video" ];
   };
 
   # Allow unfree packages
