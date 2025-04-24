@@ -13,7 +13,7 @@
     padding = "10";
     margin = "10";
     anchor = "top-right";
-    width = 500;
+    width = 400;
     height = 100;
     defaultTimeout = 5000;      icons = true;
     maxVisible = 5;
