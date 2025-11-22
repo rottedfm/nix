@@ -1,0 +1,18 @@
+scheme: "Ferra"
+author: "Casper Storm (adapted for base16)"
+base00: "2b292d" # Night - Default Background
+base01: "383539" # Ash - Lighter Background (Used for status bars)
+base02: "4d424b" # Umber - Selection Background
+base03: "6f5d63" # Bark - Comments, Invisibles, Line Highlighting
+base04: "d1d1e0" # Mist - Subtle foreground (for operators, delimiters)
+base05: "fecdb2" # Blush - Default Foreground (matches Helix contrast)
+base06: "fecdb2" # Blush - Light foreground
+base07: "fecdb2" # Blush - Lightest foreground
+base08: "e06b75" # Ember - Variables, Red
+base09: "ffa07a" # Coral - Integers, Orange/Functions
+base0A: "f5d76e" # Honey - Classes, Yellow
+base0B: "b1b695" # Sage - Strings, Green
+base0C: "fecdb2" # Blush - Support, Cyan/Warm
+base0D: "ffa07a" # Coral - Functions (matches Helix)
+base0E: "d1d1e0" # Mist - Keywords, Operators (matches Helix)
+base0F: "f6b6c9" # Rose - Deprecated, Special
