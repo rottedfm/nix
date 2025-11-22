@@ -5,6 +5,10 @@
     enable = true;
     enableCompletion = true;
 
+    shellAliases = {
+      update = "nix run .#activate && git diff && git add . && git commit -m 'Update configuration' && git push";
+    };
+
     # Enable vi mode for bash
     initExtra = ''
       set -o vi
