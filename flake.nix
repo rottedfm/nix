@@ -7,26 +7,6 @@
 
     flake-parts.url = "github:hercules-ci/flake-parts";
     nixos-unified.url = "github:srid/nixos-unified";
-
-    # Niri compositor
-    niri.url = "github:sodiboo/niri-flake";
-    niri.inputs.nixpkgs.follows = "nixpkgs";
-
-    # Stylix theming system
-    stylix.url = "github:danth/stylix";
-    stylix.inputs.nixpkgs.follows = "nixpkgs";
-
-    # DankMaterialShell dependencies
-    dgop.url = "github:AvengeMedia/dgop";
-    dgop.inputs.nixpkgs.follows = "nixpkgs";
-
-    dms-cli.url = "github:AvengeMedia/danklinux";
-    dms-cli.inputs.nixpkgs.follows = "nixpkgs";
-
-    dankMaterialShell.url = "github:AvengeMedia/DankMaterialShell";
-    dankMaterialShell.inputs.nixpkgs.follows = "nixpkgs";
-    dankMaterialShell.inputs.dgop.follows = "dgop";
-    dankMaterialShell.inputs.dms-cli.follows = "dms-cli";    
   };
 
   outputs = inputs@{ self, ... }:
@@ -48,12 +28,6 @@
                 imports = [
                   # Host-specific configuration
                   ./hosts/fm
-
-                  # Import niri module
-                  inputs.niri.nixosModules.niri
-
-                  # Import stylix module for system-wide theming
-                  inputs.stylix.nixosModules.stylix
 
                   # Setup home-manager in NixOS config
                   {

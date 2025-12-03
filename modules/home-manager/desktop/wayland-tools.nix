@@ -2,7 +2,6 @@
 
 {
   # Wayland utilities and tools
-  # Moved from nixos/desktop/niri.nix
 
   home.packages = with pkgs; [
     # Launchers and UI
@@ -20,10 +19,10 @@
     playerctl      # Media player controller
 
     # XWayland support
-    xwayland-satellite  # Xwayland outside your Wayland compositor
+    xwayland-satellite
   ];
 
-  # Environment variables for XWayland support in niri
+  # Environment variables for XWayland support
   home.sessionVariables = {
     DISPLAY = ":0";
   };

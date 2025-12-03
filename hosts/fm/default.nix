@@ -16,12 +16,6 @@
     ../../modules/nixos/core/system.nix
     ../../modules/nixos/core/gpu.nix
 
-    # Desktop environment modules
-    ../../modules/nixos/desktop/display-manager.nix
-    ../../modules/nixos/desktop/niri.nix
-    ../../modules/nixos/desktop/gnome.nix
-    ../../modules/nixos/desktop/stylix.nix
-
     # System service modules
     ../../modules/nixos/services/printing.nix
     ../../modules/nixos/services/ollama.nix

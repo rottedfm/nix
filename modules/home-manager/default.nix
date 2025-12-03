@@ -22,11 +22,11 @@
     ./programs/security.nix
     ./programs/obs.nix
     ./programs/blender.nix
+    ./programs/torrenting.nix
 
     # Desktop environment modules
-    ./desktop/niri.nix
     ./desktop/terminal-tools.nix
     ./desktop/wayland-tools.nix
-    ./desktop/dms.nix
+    ./desktop/noctalia-shell.nix
   ];
 }

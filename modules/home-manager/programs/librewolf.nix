@@ -13,7 +13,4 @@
       };
     };
   };
-
-  # Configure stylix to theme librewolf with the profile names
-  stylix.targets.librewolf.profileNames = [ "default" ];
 }
